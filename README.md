@@ -7,6 +7,7 @@
 ### **1. Description du projet**
 
 (Complétez ici avec la description du projet présentée en classe.)
+<img width="869" height="480" alt="Schema Architecture Eatsmart a completer" src="https://github.com/user-attachments/assets/391fa742-c570-4809-9596-01cef1f31fa5" />
 
 ---
 
