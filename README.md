@@ -1,13 +1,15 @@
 # **Projet : EatSmart**
 
-**Etudiants :** Myriam
+**Etudiant :** Myriam
 
 ---
 
 ### **1. Description du projet**
-<img width="869" height="480" alt="Schema Architecture Eatsmart a completer" src="https://github.com/user-attachments/assets/391fa742-c570-4809-9596-01cef1f31fa5" />
 
-Ceci est un projet ou nous avon crer un repository github.
+Ceci est un projet ou nous avon creer un repository github.
+
+
+<img width="869" height="480" alt="Schema Architecture Eatsmart a completer" src="https://github.com/user-attachments/assets/391fa742-c570-4809-9596-01cef1f31fa5" />
 ---
 
 ### **3. Fonctionnalités principales**
