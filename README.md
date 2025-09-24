@@ -17,26 +17,26 @@ Eatsmart est une application qui permet de consulter le menu de la pizzeria et d
 #### **3.1 Frontend (eatSmartFront)**
 
 - **Fonctionnalité 1 :**  
-  La première fonctionnalité est l'affichage dinamique du meenu de la pizzeria, permettant de aux utilisateurs de naviguer facilement entre les différentes catégories de plats(pizza,boissons,desserts, etc..) Chaque plats est accompagné de détails comme la description, les ingrédients et le prix.
+ Affichage dinamique du meenu de la pizzeria, permettant de aux utilisateurs de naviguer facilement entre les différentes catégories de plats(pizza,boissons,desserts, etc..) Chaque plats est accompagné de détails comme la description, les ingrédients et le prix.
   
 - **Fonctionnalité 2 :**  
-  La deuxieme est la consultation du catalogue.
+  Processus de commande simplifié, ou l'utilisateur peut sélectionner les plats qu'il souhaite commander, personnalisersa commande (choix de garniture,taille,etc..),puis ajouter au panier avant de procéder au paiement.
   
 #### **3.2 Backend (eatSmartBack)**
 
 - **Fonctionnalité 1 :**  
-  Gestion des utilisateurs
+  Gestion des commandes en temps réel, avec un tableau de bord permettant aux administrateurs de suivre l'état des commandes et de gérer le clients.
   
 - **Fonctionnalité 2 :**  
-  Gestion contenu/données
+  Administration du menu, permettant d'ajouter, modifier ou supprimer des plats dans le menu de la pizzeria. Les prix,descriptions et ingrédients sont également mis à jour à partir de cette interface.
 
 ---
 
 ### **4. Technologies utilisées**
 
-- **Frontend :** React.js (avec HTML, CSS, JavaScript)  
-- **Backend :** Node.js avec Express.js  
-- **Base de données :** MongoDB (NoSQL, flexible pour stocker les données des utilisateurs et des repas)  
+- **Frontend :** HTML, CSS, JavaScript
+- **Backend :** API
+- **Base de données :** MYSQL
 
 
 ---
