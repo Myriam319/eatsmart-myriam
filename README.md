@@ -41,4 +41,4 @@ Eatsmart est une application qui permet de consulter le menu de la pizzeria et d
 
 ---
 ### **5. MCD**
-<img src=".assets/img/mcd.PNG">
+<img src="./assets/img/mcd.PNG">
