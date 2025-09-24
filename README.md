@@ -6,7 +6,7 @@
 
 ### **1. Description du projet**
 
-Ceci est un projet ou nous avons creer un repository github.
+Eatsmart est une application qui permet de consulter le menu de la pizzeria et de passer commande directement depuis celle-ci. Elle gère également le traitement des commandes et garde l'historique des commandes. Elle prévient directement le client lorsque sa commande est terminer.
 
 
 <img width="869" height="480" alt="Schema Architecture Eatsmart a completer" src="https://github.com/user-attachments/assets/391fa742-c570-4809-9596-01cef1f31fa5" />
@@ -17,7 +17,7 @@ Ceci est un projet ou nous avons creer un repository github.
 #### **3.1 Frontend (eatSmartFront)**
 
 - **Fonctionnalité 1 :**  
-  La premiere fonctionnalité du front office est la creation et la gestion du compte utilisateur.
+  La première fonctionnalité est l'affichage dinamique du meenu de la pizzeria, permettant de aux utilisateurs de naviguer facilement entre les différentes catégories de plats(pizza,boissons,desserts, etc..) Chaque plats est accompagné de détails comme la description, les ingrédients et le prix.
   
 - **Fonctionnalité 2 :**  
   La deuxieme est la consultation du catalogue.
