@@ -1,0 +1,23 @@
+<?php
+class CategorieModel
+{
+    private $pdo;
+
+    public function __construct()
+    {
+        try {
+            $this->pdo = new PDO("mysql:host=localhost;dbname=eatsmart_bdd_bruno;charset=utf8", "root", "");
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die("Erreur de connexion à la base de données : " . $e->getMessage());
+        }
+    }
+
+    public function getDBAllCategorie()
+    {
+        $stmt = $this->pdo->query("SELECT * FROM categorie");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+//$categorieModel = new CategorieModel();
+//print_r($categorieModel->getDBAllCategorie());
