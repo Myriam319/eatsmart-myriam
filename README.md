@@ -38,6 +38,18 @@ Eatsmart est une application qui permet de consulter le menu de la pizzeria et d
 - **Backend :** API
 - **Base de données :** MYSQL
 
+## Endpoints de l'API
+
+Adresse de l'API (en local) : http://localhost/myriam-api-eatsmart
+
+Voici les différents endpoints de l'API : 
+- `GET /articles` → Afficher la liste des articles
+- `GET /articles/{id}` → Afficher l'article avec l'id égal à {id}
+- `GET /categories` → Afficher la liste des catégories
+- `GET /categorie{id}` → Afficher la catégorie avec l'id égal à {id}
+- `GET /commandes` → Afficher la liste des commandes
+- `GET commande{id}` → Afficher la commande avec l'id égal à {id}
+
 
 ---
 ### **5. MCD**
