@@ -1,0 +1,77 @@
+<?php
+    class CategorieModel //ici
+    {
+        private $pdo;
+
+        public function __construct()
+        {
+            try {
+                $this->pdo = new PDO("mysql:host=localhost;dbname=eatsmart_bdd_bruno;charset=utf8", "root", "");
+                $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {
+                die("Erreur de connexion à la base de données : " . $e->getMessage());
+            }
+        }
+
+        public function getDBAllCategories() //ici
+        {
+            $stmt = $this->pdo->query("SELECT * FROM categorie");
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+        public function getDBCategoriesByID($idCategories)
+        {
+            $req = "
+                SELECT * FROM categorie
+                WHERE id_categorie = :idCategorie
+            ";
+            $stmt = $this->pdo->prepare($req);
+            $stmt->bindValue(":idCategorie", $idCategories, PDO::PARAM_INT);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_ASSOC); // ou fetchAll si tu veux un tableau
+        }
+        public function getArticlesByCategorieID($id)
+        {
+            $sql = "SELECT * FROM article WHERE id_categorie = :id";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([':id' => $id]);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+        public function createDBCategorie($data){
+            $req = "INSERT INTO categorie (id_categorie,nom)
+                VALUES (:id_categorie,:nom)";
+            $stmt =$this->pdo->prepare($req);
+            $stmt->bindParam(":id_categorie",$data['id_categorie'], PDO::PARAM_INT);
+            $stmt->bindParam(":nom",$data['nom'], PDO::PARAM_STR);
+            $stmt->execute();
+            $categorie = $this-> getDBCategoriesByID($data['id_categorie']);
+            return $categorie;
+        }
+        public function updateDBCategorie ($id,$data){
+            $req = "UPDATE categorie
+                    SET id_categorie= :id_categorie, nom= :nom
+                    WHERE id_categorie= :id";
+            $stmt = $this->pdo->prepare($req);
+
+            $stmt->bindParam(":id_categorie",$data['id_categorie'], PDO::PARAM_INT);
+            $stmt->bindParam(":nom",$data['nom'], PDO::PARAM_STR);
+            $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+            $stmt->execute();
+
+            //verifie si une ligne a été modifiée 
+            return $stmt->rowCount()>0;
+        }
+        public function deleteDBCategorie ($id){
+            $req = "DELETE FROM categorie 
+                    WHERE id_categorie = :id";
+            $stmt = $this->pdo->prepare($req);
+
+            $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+            $stmt->execute();
+
+            //verifie si une ligne a été modifiée 
+            return $stmt->rowCount()>0;
+        }
+    }
+    //$categorieModel = new CategorieModel(); 
+    //print_r($categorieModel->getDBAllCategories());
+?>
