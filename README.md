@@ -36,7 +36,7 @@ Administration du menu, permettant d'ajouter, modifier ou supprimer des plats da
 
 ### **5. MCD/MLD/MPD**
 
-<img src="./Assets/img/mcd.PNG">
+<img src="assets/img/mcd.PNG">
 ---
 ## Endpoints de l'API
 
