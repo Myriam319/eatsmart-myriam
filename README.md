@@ -9,7 +9,7 @@ Bnesalem Myriam
 EatSmart est une application qui permet de consulter le menu de la pizzeria et de passer commande directement depuis celle-ci. Elle gère également le traitement des commandes et garde l'historique des commandes .
 Elle prévient directement le client lorsque sa commande est terminer.
 
-<img src="./Assets/img/Capture.PNG">
+<img src="assets/img/Schema Architecture Eatsmart a completer.png">
 
 
 3.1 Frontend (eatSmartFront)
@@ -36,7 +36,7 @@ Administration du menu, permettant d'ajouter, modifier ou supprimer des plats da
 
 ### **5. MCD/MLD/MPD**
 
-<img src="./Assets/img/mcd.PNG">
+<img src="assets/img/mcd.PNG">
 ---
 ## Endpoints de l'API
 
