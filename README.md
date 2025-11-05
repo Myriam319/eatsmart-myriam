@@ -2,14 +2,14 @@
 
 **Etudiants :**
 
-Bnesalem Myriam
+Bensalem Myriam
 
 ### **1. Description du projet**
 
 EatSmart est une application qui permet de consulter le menu de la pizzeria et de passer commande directement depuis celle-ci. Elle gère également le traitement des commandes et garde l'historique des commandes .
 Elle prévient directement le client lorsque sa commande est terminer.
 
-<img src="assets/img/Schema Architecture Eatsmart a completer.png">
+<img src="assets/img/Shema.png">
 
 
 3.1 Frontend (eatSmartFront)
